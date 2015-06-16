@@ -4,7 +4,7 @@
 ## of a matrix and cache the result for subsequent usaage
 
 
-## makeCachMatrix() - function takes a square invertable matrix as
+## makeCachMatrix - function takes a square invertable matrix as
 ## input and returns a list used as input to the cacheSolve() function
 makeCacheMatix <- function(x = matrix()) 
 {
@@ -22,7 +22,7 @@ makeCacheMatix <- function(x = matrix())
        getinv = getinv)
 }
 
-## Returns a matrix that is the inverse of 'x'
+## cachSolve - Function returns a matrix that is the inverse of 'x'
 cacheSolve <- function(x, ...) 
 {
   inv <- x$getinv()
@@ -37,3 +37,5 @@ cacheSolve <- function(x, ...)
   x$setinv(inv)
   return(inv)
 }
+
+
